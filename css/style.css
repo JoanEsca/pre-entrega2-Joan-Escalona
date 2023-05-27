@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ysabeau:wght@600&display=swap');
+
+
+/*font-family: 'Ysabeau', sans-serif; parrafos
+font-family: 'Poppins', sans-serif;  Titulos */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;    
+}
+
+body{
+    background-color: #191919;
+
+}
+
+h1{
+    text-align: center;
+    color: #eeee;
+    font-size: 30px;
+
+}
+.h1-fondo{
+    background-color: #DC5F00;
+}
+p{
+    color: #eeee;
+    font-family: 'Ysabeau', sans-serif
+}
+h2{
+    color:#eeee
+}
+
+.menu-navegacion{
+    background-color: #a52a2a;
+    padding: 5px;
+    font-size: 20px;
+
+}
+                    /*imagen del inicio,         INICIO*/
+.index{
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr);
+    grid-template-rows: repeat(6, 300px);
+    grid-template-areas: 
+    "area1 area1 area1 area1"
+    "area1 area1 area1 area1"
+    "area2 area2 area3 area3"
+    "area2 area2 area3 area3" 
+    "area4 area4 area4 area4"
+    "area5 area5 area5 area5";
+    gap:  15px;
+}
+.index__hijo {
+    width: 100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+}
+
+.index__hijo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.i1{
+    grid-area: area1;
+}
+.i2 {
+    grid-area: area2;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    border: solid 1px #eeee;
+}
+.i2 img{
+    width: 100%;
+    height: 520px;
+}
+.cars-index{
+    text-align: center;
+}
+.cars-index p{
+    font-size: 20px;
+}
+.cars-index a{
+    text-decoration: none;
+}
+.cars-index h2:hover{
+    font-weight: bold;
+}
+
+.i3{
+    grid-area: area3;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    border: solid 1px #eeee;
+}
+.i3 img {
+    width: 100%;
+    height: 520px;
+}
+.i4{
+    grid-area: area4;
+    border: solid 1px #eeee;
+    overflow: hidden;
+    transition: .6s;
+}
+.i4 a{
+    width: 100%;
+    filter: blur(2px);
+    transition: .6s;
+}
+.i4 a:hover{
+    filter: blur(0px);
+}
+.i4:hover{
+    border-radius: 200px;
+}
+.i5{
+    grid-area: area5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    align-items: center;
+}
+.i5 p {
+    font-size: 20px;
+}
+.i5 a{
+    color: #eeee;
+    text-decoration: none;
+}
+.i5 a:hover{
+    font-weight: bold;
+}
+
+                    /* cards suplementos,      SUPLEMENTOS*/
+.cards-suplementos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 5px;
+}
+
+.body-suplementos{
+    width: 30%;
+    border: solid 2px #eeee;
+    box-shadow: 4px 4px 10px 0px rgb(252, 252, 252);
+}
+.body-suplementos img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.body-suplementos h2{
+    font-weight: bold;
+    font-size: 28px;
+}
+.body-suplementos h2 , .body-suplementos p{
+    text-align: center;
+    padding: 5px;
+}
+
+                    /**imagen principal de rutina,   RUTINA*/
+.img-rutina-principal{
+    height: 500px;
+    
+}
+.img-rutina-principal img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.videos{
+    display: inline;
+}
+.videos2{
+    padding: 30px;
+    display: inline-block;
+}
+.videos2 iframe{
+    border: 5px solid #eeee;
+}
+
+
+
+                    /*   ALIMENTACIOPN*/
+
+.img-alimentacion{
+    height: 400px;
+    padding-bottom: 10px;
+}
+.img-alimentacion img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel-inner, .carousel-item, .carousel-item img {
+    height: 425px;
+    object-fit: cover;
+
+}
+.carousel-inner{
+    border: 2px solid #eeee;
+}
+.container p{
+    font-size: 22px;
+}
+
+
+                    /* datos de contacto*/
+.fitness{
+    font-size: 80px;
+    padding-top: 3%;
+}
+.datos{
+    color: #eeee;
+}
+                    /* footer*/
+
+.instagram{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .instagram a{
+        color: #eeee;
+        font-size: 20px;
+        transition: .3s;
+}
+.instagram a:hover{
+    font-size: 30px;
+}
+
+
+@media only screen and (max-width: 900px){
+.index{
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr);
+    grid-template-rows: repeat(5, 300px);
+    grid-template-areas: 
+    "area1 area1 area1 area1"
+    "area2 area2 area3 area3"
+    "area2 area2 area3 area3" 
+    "area4 area4 area4 area4"
+    "area5 area5 area5 area5";
+    gap:  15px;
+}
+                            /*   SUPLEMENTOS*/
+.cards-suplementos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.body-suplementos{
+    width: 100%;
+    height: 600px;
+}
+.body-suplementos img{
+    height: 450px;
+}
+}
+@media only screen and (max-width: 650px){
+    .body-suplementos{
+        height: 500px;
+    }
+    .body-suplementos img{
+        height: 360px;
+    }
+}
+@media only screen and (max-width: 580px){
+    .index{
+    display: flex;
+    flex-direction: column;
+    }
+    h1{
+        font-size: 25px;
+    }
+                        /*   ALIMENTACIOPN*/
+    .img-alimentacion{
+        height: 300px;
+    }
+    .container p{
+    font-size: 20px;
+    }
+    .carousel-inner, .carousel-item, .carousel-item img {
+        height: 400px;
+    }
+                            /*   SUPLEMENTOS*/
+    .body-suplementos{
+        height: 460px;
+    }
+    .body-suplementos img{
+        height: 300px;
+    }
+
+}
+@media only screen and ( max-width: 480px){
+
+    .index__hijo img{
+    height: 280px;
+    }
+    h1{
+    font-size: 20px;
+    }
+    .index__hijo p{
+    font-size: 15px;
+    }
+    .index__hijo h2{
+        font-size: 20px;
+    }
+                            /*   ALIMENTACIOPN*/
+    .img-alimentacion{
+        height: 250px;
+    }
+       .container p{
+        font-size: 15px;
+        }
+        .carousel-inner, .carousel-item, .carousel-item img {
+            height: 300px;
+        }
+                            /*   SUPLEMENTOS*/
+    .body-suplementos{
+        height: 410px;
+    }
+    .body-suplementos img{
+        height: 200px;
+    }
+}

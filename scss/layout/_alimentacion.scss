@@ -1,0 +1,19 @@
+                    /*   ALIMENTACIOPN*/
+
+.img-alimentacion{
+    height: 400px;
+    padding-bottom: 10px;
+    img{
+        @include img(100%,100%,cover);
+    }
+}
+.carousel-inner, .carousel-item, .carousel-item img {
+    height: 425px;
+    object-fit: cover;
+}
+.carousel-inner{
+    border: 2px solid $border-color;
+}
+.container p{
+    font-size: 20px;
+}

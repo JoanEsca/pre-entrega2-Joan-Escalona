@@ -1,0 +1,23 @@
+                   /* cards suplementos,      SUPLEMENTOS*/
+.cards-suplementos{
+    @include flex(row,center,center,wrap,30px);
+    padding: 5px;
+
+    .body-suplementos{
+        width: 30%;
+        border: solid 2px $border-color;
+        box-shadow: 4px 4px 10px 0px $border-color;
+        img{
+            @include img (100%,500px,cover);
+        }
+        h2{
+            font-weight: bold;
+            font-size: 28px;
+        }
+        h2 , p{
+            text-align: center;
+            padding: 5px;
+        
+        }
+    }
+}

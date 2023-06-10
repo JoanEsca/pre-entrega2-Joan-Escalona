@@ -1,0 +1,18 @@
+
+// import resets
+@import"base/variables";
+@import"base/resets";
+@import"base/utilidades";
+
+// import components
+@import "components/navbar";
+@import "components/footer";
+//import layout 
+
+@import'layout/index';
+@import'layout/alimentacion';
+@import'layout/suplemento';
+@import'layout/contacto';
+@import'layout/rutina';
+@import"layout/mediaqueries";
+

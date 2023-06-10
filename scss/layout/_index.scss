@@ -1,0 +1,83 @@
+                    /*imagen del inicio,         INICIO*/
+.index{
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr);
+    grid-template-rows: repeat(6, 300px);
+    grid-template-areas: 
+    "area1 area1 area1 area1"
+    "area1 area1 area1 area1"
+    "area2 area2 area3 area3"
+    "area2 area2 area3 area3" 
+    "area4 area4 area4 area4"
+    "area5 area5 area5 area5";
+    gap:  15px;
+
+    &__hijo {
+        display: flex;
+
+        &.i1{
+            grid-area: area1;
+        }
+        img{
+            @include img (100%,100%,cover);
+            }
+        &.i2 {
+            grid-area: area2;
+            justify-content: space-between;
+            flex-direction: column-reverse;
+            border: solid 1px #eeee;
+            img{
+                @include img(100%,520px,cover);
+            }
+        }
+        &.i3{
+            @extend .i2;
+            grid-area: area3;
+        }
+        .cars-index{
+            text-align: center;
+            p{
+                font-size: 20px;
+            }
+            a{
+                text-decoration: none;
+            }
+            h2:hover{
+                font-weight: bold;
+            }
+        }
+        &.i4{
+            grid-area: area4;
+            overflow: hidden;
+            transition: .6s;
+            a{
+                width: 100%;
+                filter: blur(2px);
+                transition: .6s;
+                &:hover{
+                    filter: blur(0px);
+                }
+            }
+            &:hover{
+                border-radius: 200px;
+            }
+        }
+        &.i5{
+            grid-area: area5;
+            @include flex(column,center,center,nowrap,10px);
+            padding: 20px;
+            p {
+                font-size: 20px;
+            }
+            a{
+                color: $text-color;
+                text-decoration: none;
+                &:hover{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+

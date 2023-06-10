@@ -1,0 +1,15 @@
+@mixin flex($direction,$justify,$align,$warp,$gap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $warp;
+    gap: $gap;
+}
+
+
+@mixin img ($width,$height,$object){
+    width: $width;
+    height: $height;
+    object-fit: $object;
+}

@@ -1,0 +1,31 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: $font;    
+}
+body{
+    background-color: $main_color;
+
+}
+h1{
+    text-align: center;
+    color: $text-color;
+    font-size: 33px;
+    padding-top: 60px;
+    margin-bottom: 0%;
+}
+.h1-fondo{
+    background-color: #f86b00;
+    border: solid 2px #191919;
+}
+p{
+    color: $text-color;
+    font-family: $font-parrafo;
+}
+h2{
+    color:$text-color
+}
+h3{
+    color:$text-color
+}

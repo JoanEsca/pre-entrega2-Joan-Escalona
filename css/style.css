@@ -462,7 +462,7 @@ h3 {
   }
   /*   SUPLEMENTOS*/
   .cards-suplementos .body-suplementos {
-    height: 520px;
+    height: 530px;
   }
   .cards-suplementos .body-suplementos img {
     height: 350px;
@@ -471,7 +471,7 @@ h3 {
     font-size: 20px;
   }
   .cards-suplementos .body-suplementos h2 {
-    padding-top: 10px;
+    padding-top: 5px;
   }
   .img-rutina {
     height: 300px;

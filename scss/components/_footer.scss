@@ -18,12 +18,29 @@
     bottom: 30px;
     left: 15px;
     z-index: 1;
+    animation-name: whstsp;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    transform: translateX(0);
         a{
-            color: #03cd03;
+            color: #15dd15;
+            border-radius: 25%;
             font-size: 25px;
             transition: .3s;
             &:hover{
                 font-size: 35px;
             }
+    }
+}
+@keyframes whstsp{
+    0%{
+    transform: translateX(-100%);
+    opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+
     }
 }
